@@ -1,0 +1,55 @@
+POST  http://localhost:3000/users/
+Content-Type : Application/json
+
+{
+    "name" : "chaitanya",
+    "email" : "chaitanyapatnala2002@gmail.com",
+    "password" : "Chaitu@123",
+    "address" : "Allipuram Kummarivedhi",
+    "phone" : "7569058564"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type : Application/json
+
+{
+    "name" : "chaitanya",
+    "password" : "Chaitu@123"
+}
+
+###
+GET http://localhost:3000/users/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2hhaXRhbnlhIiwiaWF0IjoxNzI5ODYwMDg1fQ.aWFIYCmT19WxJQmT2BkrNt4l0NpCxgges02VjOsbBE4
+
+###
+POST  http://localhost:3000/users/
+Content-Type : Application/json
+
+{
+    "name" : "saikumar",
+    "email" : "saikumar2002@gmail.com",
+    "password" : "Sai@123",
+    "address" : "Allipuram Kummarivedhi",
+    "phone" : "7569545452"
+}
+
+###
+
+PUT http://localhost:3000/user/1/
+Content-Type : Application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2hhaXRhbnlhIiwiaWF0IjoxNzI5ODYwMDg1fQ.aWFIYCmT19WxJQmT2BkrNt4l0NpCxgges02VjOsbBE4
+
+{
+    "name" : "saikumar",
+    "email" : "saikumar2002@gmail.com",
+    "password" : "Sai@123",
+    "address" : "Allipuram Kummarivedhi",
+    "phone" : "7569545452"
+}
+
+###
+DELETE http://localhost:3000/user/1/
+Content-Type : Application/json
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiY2hhaXRhbnlhIiwiaWF0IjoxNzI5ODYwMDg1fQ.aWFIYCmT19WxJQmT2BkrNt4l0NpCxgges02VjOsbBE4
+
